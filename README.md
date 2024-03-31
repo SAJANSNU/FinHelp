@@ -1,6 +1,7 @@
-# FinHelp
-AI based solution featuring an interactive chat for financial guidance
 # FinHelp - FinancialAssistant - GENAI
+
+## Project Description
+FinHelp is an AI-based solution designed to provide interactive financial guidance through a comprehensive suite of modules. Developed using GENAI, this project aims to streamline financial tasks, enhance user interactions, and offer valuable insights into financial data. By integrating cutting-edge technologies such as natural language processing (NLP), optical character recognition (OCR), and machine learning, FinHelp empowers users to manage and analyze their financial information effectively.
 
 ## Overview
 The Financial Assistant integrates three essential modules: the Ollama Language Model (LLM) Chatbot, an Optical Character Recognition (OCR) tool, and a Transaction Categorization component. This comprehensive solution streamlines financial tasks, enhances user interactions, and provides valuable insights into financial data.
@@ -53,22 +54,35 @@ The Transaction Categorization module processes a CSV file containing financial 
 - Follow prompts to categorize transactions interactively.
 - View the categorized transactions, enhancing organization and analysis.
 
+## Target Audience
+- **Individual Users:** Everyday consumers seeking personalized financial guidance and assistance in managing their finances effectively.
+- **Small Businesses:** Entrepreneurs and small business owners looking for tools to streamline financial tasks, categorize transactions, and gain insights into their financial data.
+- **Financial Analysts:** Professionals in the finance industry who require intelligent tools for analyzing financial data, categorizing transactions, and providing financial recommendations.
+
 ## Model Tuning
 To fine-tune the Ollama model specifically for financial tasks, ensure you have the text file "financial_planner.txt" during the tuning process. This file provides crucial context and parameters for the model to operate effectively as a financial assistant.
 
 ## Requirements
 - Python 3.x
 - Required Python packages: panel, langchain_community, Pillow, pytesseract, pandas, pydantic
+
+## Installation
+1. Install required packages:
+    ```
+    pip install panel langchain_community Pillow pytesseract pandas pydantic
+    ```
+2. Ensure Tesseract OCR is installed and set the path in the code:
+    ```python
+    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'''
+    ```
+
 ## Usage
 1. Run the provided Python scripts for each module.
 2. Follow the instructions within each script for a seamless and interactive financial assistant experience.
 
-Feel free to customize the code according to your requirements or integrate it into your financial management projects! The Financial Assistant aims to provide a versatile, user-friendly, and intelligent solution for managing and analyzing financial information, with a specific focus on fine-tuning the Ollama model for financial tasks using the "financial_planner.txt" file.
+## License
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
-## Installation
-1. Install required packages:
-2. Ensure Tesseract OCR is installed and set the path in the code:
-```python
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
 
 
